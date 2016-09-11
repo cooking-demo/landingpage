@@ -5,12 +5,11 @@
   "scripts": {
     "dist": "cooking build -p",
     "dev": "cooking watch",
-    "deploy": "gh-pages -d dist --remote git@github.com:ElemeFE/cooking.git"
+    "deploy": "gh-pages -d dist --remote cooking"
   },
   "author": "qingwei-li<qingwei.li@ele.me>",
   "license": "MIT",
   "devDependencies": {
-    "el-popup": "0.0.3",
     "gh-pages": "^0.11.0"
   }
 }
