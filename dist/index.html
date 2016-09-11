@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="基于 webpack 的构建工具，简单的配置、项目零依赖、快速开始开发">
+  <title>cooking - 更易上手的前端构建工具</title>
+<link rel="shortcut icon" href="favicon.ico"><link href="app.2c95b72.css" rel="stylesheet"></head>
+<body>
+  <app><header class="header">
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a class="nav-link" href="http://cookingjs.github.io/">Docs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://cookingjs.github.io/list-of-plugins.html">Plugins</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/ElemeFE/cooking">Github</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-wrap">
+    <h1 class="headline">
+      <img class="logo" src="static/logo.f3eae12.svg" alt="logo">
+      cooking
+    </h1>
+    <p class="desc">更易上手的前端构建工具</p>
+    <input class="install" @click="handleCopyCmd" value="npm install cooking -g" readonly>
+
+    <div class="buttongroup">
+      <iframe class="button" src="https://ghbtns.com/github-btn.html?user=elemefe&repo=cooking&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+      <iframe class="button" src="https://ghbtns.com/github-btn.html?user=elemefe&repo=cooking&type=fork&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+    </div>
+  </div>
+</header>
+
+
+<section class="intro">
+  <h1 class="headline">不仅简单而且高效</h1>
+  <p class="text">cooking 的目标是将你从繁琐的构建配置中解放出来，同时还省去每个项目都要安装一堆开发依赖的麻烦。基于 webapck 但更友好的配置项、易用的扩展配置机制，让你专注项目忘掉配置。</p>
+  <video class="video" src="//7i7gvg.com1.z0.glb.clouddn.com/demo.mp4" type="video/mp4" controls preload="auto" poster></video>
+</section>
+
+<div class="warp">
+  <section class="quickstart">
+    <h1 class="headline">快速开始</h1>
+    <code class="shell">
+      <div class="comment"># 创建一个项目为 my-project 的 vue 项目</div>
+      <div class="command">$ cooking create my-project vue</div>
+      <br />
+      <div class="comment"># 进入目录后，启动开发模式 (Development)</div>
+      <div class="command">$ cooking watch</div>
+    </code>
+    <p class="more">更详细的使用方式请<a class="link" href="http://cookingjs.github.io">参考文档</a></p>
+  </section>
+</div>
+
+<section class="info grid">
+  <div class="feature grid-col">
+    <h1 class="feature-title">基于 webpack</h1>
+    <p class="feature-text">如果重写原配置文件，只需少量甚至不修改，即可让 cooking 使用已有的 webapck 配置文件。<a href="http://cookingjs.github.io/migration-guide" class="link">迁移指南</a></p>
+  </div>
+
+  <div class="feature grid-col">
+    <h1 class="feature-title">项目零开发依赖</h1>
+    <p class="feature-text">多个项目共用同一个 webpack，省去项目内安装多个开发依赖的过程，从创建项目到启动开发环境花费时间不到十秒。</p>
+  </div>
+
+  <div class="feature grid-col">
+    <h1 class="feature-title">配置简单</h1>
+    <p class="feature-text">将 webpack 的常见配置转换成更直观的参数，简单的配置即可实现 devServer、chunk、ES6 预处理、ESLint 等功能。</p>
+  </div>
+
+  <div class="feature grid-col">
+    <h1 class="feature-title">脚手架</h1>
+    <p class="feature-text">内置脚手架功能，能快速创建包含 cooking 配置文件的空项目。脚手架为 Github 远程仓库，可以轻松定义自己的脚手架。</p>
+  </div>
+
+  <div class="feature grid-col">
+    <h1 class="feature-title">插件机制</h1>
+    <p class="feature-text">cooking 只包含最基本的功能，可以用插件机制来增强功能。每个项目可以使用不同的插件，只有在需要时才自动安装。</p>
+  </div>
+
+  <div class="feature grid-col">
+    <h1 class="feature-title">个性化设置</h1>
+    <p class="feature-text">除了插件、脚手架之外，还提供指令、依赖包的扩展，可以将 cooking 打造成适合自己团队使用的构建工具。</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="https://github.com/ElemeFE/" target="_blank" class="copyright">&copy; ElemeFE</a>
+</footer>
+</app>
+<script src="vendor.9931926.js"></script><script src="app.3fbdf9c.js"></script></body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78788645-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
