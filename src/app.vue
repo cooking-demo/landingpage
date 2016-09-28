@@ -1,6 +1,12 @@
 <script>
+  import video from 'url?limit=1&name=static/[name].[hash:7].[ext]!./assets/demo.mp4';
+
   export default {
     name: 'app',
+
+    created() {
+      this.video = video;
+    },
 
     template: require('./app.html'),
 

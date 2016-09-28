@@ -1,19 +1,13 @@
-const cooking = require('cooking');
+const cooking = require('cooking')
 
 cooking.set({
-  use: 'vue',
-  entry: {
-    app: './src/main.js',
-    vendor: ['vue']
-  },
+  entry: './src/main.js',
   template: {
     'index.html': {
       template: './src/index.tpl',
       favicon: './src/assets/favicon.ico'
     }
   },
-  chunk: 'vendor',
-  urlLoaderLimit: false,
   devServer: {
     port: 8802,
     publicPath: '/'
@@ -21,7 +15,8 @@ cooking.set({
   hash: true,
   publicPath: '/cooking/',
   extractCSS: true,
-  extends: ['vue', 'lint', 'saladcss']
-});
+  extends: ['vue', 'lint', 'saladcss'],
+  externals: process.env.NODE_ENV === 'production' ? { vue: 'Vue' } : {}
+})
 
-module.exports = cooking.resolve();
+module.exports = cooking.resolve()
