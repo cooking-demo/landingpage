@@ -1,12 +1,11 @@
 {
-  "name": "cooking-landingpage",
-  "version": "0.0.0",
   "description": "cooking landingpage",
   "scripts": {
     "dist": "cooking build -p",
     "dev": "cooking watch",
     "deploy": "gh-pages -d dist --remote cooking"
   },
+  "homepage": "http://elemefe.github.io/cooking/",
   "author": "qingwei-li<qingwei.li@ele.me>",
   "license": "MIT",
   "devDependencies": {
